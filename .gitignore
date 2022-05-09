@@ -1,0 +1,7 @@
+*
+!*.js
+!*.json
+!fzf-previews
+!LICENSE
+!README.md
+!.gitignore

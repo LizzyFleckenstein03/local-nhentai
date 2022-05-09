@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "node-fetch": "^2.0.0"
+  },
+  "name": "nhentai-mgr",
+  "version": "1.0.0",
+  "main": "select.js",
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliasFleckenstein03/nhentai-mgr.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/EliasFleckenstein03/nhentai-mgr/issues"
+  },
+  "homepage": "https://github.com/EliasFleckenstein03/nhentai-mgr#readme",
+  "description": ""
+}
