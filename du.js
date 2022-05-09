@@ -1,10 +1,10 @@
 const child = require("child_process")
 
-module.exports = dir => {
+module.exports = dirs => {
 	let res, rej
 	const prom = new Promise((rs, rj) => [res, rej] = [rs, rj])
 
-	const proc = child.spawn("du", ["-b", "-L", dir])
+	const proc = child.spawn("du", ["-b", "-L", "-c", ...dirs])
 
 	let data = ""
 	proc.stdout.on("data", chunk => {
@@ -13,7 +13,7 @@ module.exports = dir => {
 
 	proc.on("close", code => {
 		if (code == 0)
-			res(parseInt(data))
+			res(parseInt(data.split("\n").at(-2)))
 		else
 			rej(code)
 	})

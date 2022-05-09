@@ -8,7 +8,5 @@ Average size per doujin: ${(size / num / 1e6).toFixed(2)}MB`
 
 info.doujins()
 	.then(doujins => Object.keys(doujins))
-	.then(doujins => Promise.all(doujins.map(du))
-		.then(sizes => sizes.reduce((a, b) => a + b, 0))
-		.then(total => console.log(fmt(doujins.length, total)))
-	)
+	.then(doujins => du(doujins)
+		.then(total => console.log(fmt(doujins.length, total))))

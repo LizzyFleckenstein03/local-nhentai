@@ -1,6 +1,6 @@
 const child = require("child_process")
 
-module.exports = (options, binary = "fzf") => {
+module.exports.fzf = (options, binary = "fzf") => {
 	let res, rej
 	const prom = new Promise((rs, rj) => [res, rej] = [rs, rj])
 
@@ -22,3 +22,7 @@ module.exports = (options, binary = "fzf") => {
 
 	return prom
 }
+
+module.exports.doujin = doujins => module.exports.fzf(doujins.sort(), __dirname + "/fzf-previews")
+	.then(doujin => child.spawn("firefox", [`file://${process.cwd()}/${doujin}/index.html`]))
+	.catch(_ => {})

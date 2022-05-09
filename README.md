@@ -20,6 +20,8 @@ Remember to install NPM deps: `npm install`
 
 `node select.js`: Open fzf/überzug menu to select a doujin. Shows a list of tags first. When a tag is selected, shows all doujins with that tag and lets the user select one, displaying the thumbnails of the doujins at the side. The "\*" tag can be used to search/select from all doujins.
 
+`node multiple-tags.js <tag1> <tag2> ...`: Open fzf/überzug menu with doujins that match all given tags (tags separated by whitespace).
+
 `node stats-doujins.js`: Displays number of downloaded doujins, total size and average size per doujin
 
 `node stats-tags.js`: Displays tags sorted by how many doujins are available for each tag. May produce long output, you might want to pipe it into `head`, `grep` or `less`.
