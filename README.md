@@ -26,7 +26,9 @@ Remember to install NPM deps: `npm install`
 
 `node stats-tags.js`: Displays tags sorted by how many doujins are available for each tag. May produce long output, you might want to pipe it into `head`, `grep` or `less`.
 
-`node wholesome.js`: Scrapes [wholesome hentais](https://wholesomelist.com/list). This takes a long time since it's about 2700 hentais in total (may consume 50GB of disk space), but you can abort it any time (and resume it later).
+`node scrape-wholesome.js`: Scrapes [wholesome hentais](https://wholesomelist.com/list). This takes a long time since it's about 2700 hentais in total (consumes about 32GB of disk space), but you can abort it any time (and resume it later).
+
+`node scrape.js <criterium> <value>`: Scrapes doujins by criterium, where criterium can be tag, artist, character, parody or group and value is the value. E.g. `node scrape.js tag full-color` scrapes fully colored doujins.
 
 Note: you might want to create a subdirectory and put the doujins into there, they will all be put into the current working directory. (Run the scripts from a different directory to prevent spamming this directory)
 Of course, you can also run these scripts in a directory where you already downloaded doujins using the `nhentai` tool, but make sure to run the symlinks script to "register" them all in the system.
