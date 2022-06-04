@@ -25,4 +25,3 @@ module.exports.fzf = (options, binary = "fzf") => {
 
 module.exports.doujin = doujins => module.exports.fzf(doujins.sort(), __dirname + "/fzf-previews")
 	.then(doujin => child.spawn("firefox", [`file://${process.cwd()}/${doujin}/index.html`]))
-	.catch(_ => {})
