@@ -2,19 +2,19 @@
   "dependencies": {
     "node-fetch": "^2.0.0"
   },
-  "name": "nhentai-mgr",
+  "name": "local-nhentai",
   "version": "1.0.0",
   "main": "select.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EliasFleckenstein03/nhentai-mgr.git"
+    "url": "git+https://github.com/LizzyFleckenstein03/local-nhentai.git"
   },
   "author": "",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/EliasFleckenstein03/nhentai-mgr/issues"
+    "url": "https://github.com/LizzyFleckenstein03/local-nhentai/issues"
   },
-  "homepage": "https://github.com/EliasFleckenstein03/nhentai-mgr#readme",
+  "homepage": "https://github.com/LizzyFleckenstein03/local-nhentai#readme",
   "description": ""
 }
